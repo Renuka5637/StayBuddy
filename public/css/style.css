@@ -1,0 +1,159 @@
+ body{
+  
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+} 
+
+.container{
+    flex: 1;
+}
+/* navbar */
+.fa-globe{
+    font-size: 1.3rem;
+    color: #fd5c63;
+}
+.nav-link{
+    color: #222222 !important;
+}
+
+.navbar{
+    background-color: white !important;
+}
+
+/* footer */
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+     
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info-links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-info-socials{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-info-copyright{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-info-socials i {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+.f-info{
+    text-align: center;
+    display: flex;
+    height: 8rem;
+    background-color: #f6f6f6;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+
+
+}
+
+/* cards */
+
+.listing-card{
+    border: none !important;
+    margin-bottom: 1rem;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text{
+    font-weight: 300 !important;
+}
+
+.listing-link{
+    text-decoration: none ;
+}
+
+/* card effect */
+
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* New Page */
+
+
+.add-btn{
+    background-color: #fd5c63 !important;
+    border: none !important;
+}
+
+/* Edit Page */
+
+.edit-btn{
+    background-color:#fd5c63 !important;
+    border: none !important;
+}
+
+/* Preview Image */
+.preview-img{
+    height: 15rem;
+    width: 22rem;
+    border-radius: 1rem;
+}
+
+/* Show Page */
+.show-img{
+    height: 50vh ;
+    border-radius: 0;
+}
+
+.btns{
+    display: flex;
+    justify-content: start;
+    margin-left: 15rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.delete{
+    margin-left: 1rem;
+}
+
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* search bar */
+
+.btn-search{
+    background-color: #fd5c63;
+    color: #fff;
+}
