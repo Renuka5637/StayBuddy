@@ -24,14 +24,13 @@
       <br>
      
       <% if(currentUser && listing.owner._id.equals(currentUser._id)){%>
-      <div class="btns">
-         <a href="/listings/<%= listing._id%>/edit" class="btn btn-dark edit edit-btn">Edit</a>
+   <div class="d-flex gap-2 mt-3">
+      <a href="/listings/<%= listing._id %>/edit" class="btn btn-dark flex-grow-1">Edit</a>
+      <form method="post" action="/listings/<%= listing._id %>?_method=DELETE" class="flex-grow-1">
+      <button class="btn btn-dark w-100">Delete</button>
+      </form>
+    </div>
 
-
-         <form method="post" action="/listings/<%= listing._id%>?_method=DELETE">
-            <button class="btn btn-dark delete">Delete </button>
-         </form>
-      </div>
    <%}%>
       
       
