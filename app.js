@@ -1,5 +1,4 @@
 
-
 if(process.env.NODE_ENV != "production"){
   require('dotenv').config();
 
@@ -133,6 +132,6 @@ app.listen(8080,() => {
 })
 
 // fallback route
-app.get("*",(req,res) => {
-    res.sendFile(path.join(dirname,'views','index.ejs'));
+app.get("",(req,res) => {
+    res.render("index");
 });
