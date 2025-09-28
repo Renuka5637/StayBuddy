@@ -127,6 +127,12 @@ app.use((err,req,res,next) => {
   //  res.status(statusCode).send(message);
 });
 
+
 app.listen(8080,() => {
     console.log("server is listening on port 8080");
 })
+
+// fallback route
+app.get("*",(req,res) => {
+    res.sendFile(path.join(dirname,'views','index.ejs'));
+});
