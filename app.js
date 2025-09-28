@@ -116,6 +116,10 @@ app.use("/listings",listingRouter);
 app.use("/listings/:id/reviews",reviewRouter);
 app.use("/",userRouter);
 
+// homepage shows listings
+app.get("/", listingController.index);
+
+
 app.all(/.*/, (req, res, next) => {
            next(new ExpressError(404, "Page Not Found"));
       });
@@ -132,7 +136,3 @@ app.listen(8080,() => {
     console.log("server is listening on port 8080");
 })
 
-// fallback route
-app.get("",(req,res) => {
-    res.render(listingController.index);
-});
