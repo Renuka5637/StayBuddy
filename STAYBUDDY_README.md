@@ -59,5 +59,5 @@ StayBuddy is a robust, personal web application designed to simplify the process
 
 
 
----
+
 
